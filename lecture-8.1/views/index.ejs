@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <a href="/create">Create Todo</a>
+    <h2>Todos</h2>
+    <table>
+     <% todos.forEach(todo => { %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= todo.textarea %></td>
+        <td><a class="green" href="/todo/<%= todo.id %>/view">View</a></td>
+        <td><a class="yellow" href="/todo/<%= todo.id %>/edit">Edit</a></td>
+        <td><button class="danger" onclick="deleteTodo(`<%= todo.id %>`);">Delete</button></td>
+      </tr>
+     <% }) %>
+    </table>
+  </body>
+</html>

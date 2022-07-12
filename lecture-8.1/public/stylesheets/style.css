@@ -1,0 +1,40 @@
+body {
+  background-color: #f2f2f2;
+  padding: 100px 300px;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rebeccapurple;
+  color:#f2f2f2;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+button{
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rebeccapurple;
+  color:#f2f2f2;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.danger{
+  background-color: #e10a0a;
+}
+.green{
+  background-color: green;
+}
+
+.update{
+  background-color: rgb(252, 156, 71);
+}
+input{
+  font-size: 16px;
+  
+}
+
