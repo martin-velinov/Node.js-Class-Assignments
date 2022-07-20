@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <br>
+    <form onsubmit="event.preventDefault()" id="form">
+      <label for="">Brand:</label>
+      <input type="text" name="brand" value="<%= car.brand %>">
+      <label for="">Model:</label>
+      <input type="text" name="model" value="<%= car.model %>">
+      <label for="">Registered:</label> 
+      <input type="text" name="registered" value="<%= car.registered %>">
+      <label for="">Year:</label> 
+      <input type="number" name="year" value="<%= car.year %>">
+      <label for=""> Horse Power:</label> 
+      <input type="number" name="horsePower" value="<%= car.horsePower %>">
+      <button onclick="updateCar(`<%= car._id %>`);">Update</button>
+    </form>
+</body>
+</html>

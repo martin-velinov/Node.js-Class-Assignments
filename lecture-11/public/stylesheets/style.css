@@ -1,0 +1,74 @@
+body {
+  background-color: #f2f2f2;
+  padding: 100px 200px;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  background-color: orange;
+  color:#f2f2f2;
+  padding: 5px 15px;
+  border-radius: 5px;
+ 
+}
+button{
+  font-size: 16px;
+  text-decoration: none;
+  background-color: orange;
+  color:#f2f2f2;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.danger{
+  background-color: #e10a0a;
+  
+}
+.green{
+  background-color: green;
+}
+.create{
+  background-color: gray;
+}
+.row td {
+  text-align: center;
+  width: 113px;
+  font-size: 20px;
+  border:1px solid black;
+}
+.header{
+  display: flex;
+  margin:0;
+}
+.header p{
+  text-transform: uppercase;
+  text-align: center;
+  padding-top:10px;
+  border:1px solid black;
+  width: 117px;
+}
+
+input{
+  padding: 6px;
+  margin:10px 0px;
+  font-size: 16px;
+}
+
+table{
+  margin-top: -17px;
+}
+
+.noborder{
+  border: none!important;
+  width: 70px!important;
+}
+
+form{
+  margin-top: 50px;
+  width: 200px;
+}

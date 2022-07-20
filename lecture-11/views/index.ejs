@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <a class="create" href="/create">Create new car</a>
+    <h2>Table of cars</h2>
+    
+      
+       <div class="header">
+         <p>Brand</p>
+         <p>Model</p>
+         <p>Registered</p>
+         <p>Year </p>
+         <p>Horse Power</p>
+         
+       </div>
+      
+     
+    <table>
+     <% cars.forEach(car => { %>
+      <tr class="row">
+        <td ><%= car.brand %></td>
+        <td><%= car.model %></td>
+        <td><%= car.registered %></td>
+        <td><%= car.year %></td>
+        <td><%= car.horsePower %></td>
+        <td class="noborder"><a class="green" href="/car/<%= car._id %>/view">View</a></td>
+        <td class="noborder"><a href="/car/<%= car._id %>/edit">Edit</a></td>
+        <td class="noborder"><button class="danger" onclick="deleteCar(`<%= car._id %>`);">Delete</button></td>
+      </tr>
+     <% }) %>
+    </table>
+  </body>
+</html>
